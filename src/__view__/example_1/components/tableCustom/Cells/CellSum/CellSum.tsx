@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import {TCustomCell} from "../../../../../types/TCustomCell";
-import {useWebTableLineApi} from "../../../../../components/WebLine/useWebLineContext";
-import {TOrderedProduct} from "../../../tableConector/tableConector";
+import {TCustomCell} from "../../../../../../dev/CORE/types/API/TCustomCell";
+import {useWebTableLineApi} from "../../../../../../dev/CORE/components/WebLine/webLineContext";
+import {TOrderedProduct} from "../../../../tableConector/tableConector";
 
 const CellSum: TCustomCell = () => {
     const { setCell, cells} = useWebTableLineApi<TOrderedProduct>()

@@ -1,7 +1,8 @@
 import {useContext} from "react";
-import {WebTableContext} from "../components/WebTable/contextes/WebTableContext";
+import {TWebTableContext, WebTableContext} from "../components/WebTable/contextes/WebTableContext";
 
-export const useTableButtons = () => {
+export const useTableButtons = <Cells extends object, Line extends object>() => {
     const tableContext = useContext(WebTableContext)
-    return tableContext
+    return tableContext as unknown as TWebTableContext<Cells, Line>
+
 }

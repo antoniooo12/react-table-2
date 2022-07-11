@@ -1,5 +1,5 @@
 import React from 'react';
-import {TCustomCell} from "../../../../../types/TCustomCell";
+import {TCustomCell} from "../../../../../../dev/CORE/types/API/TCustomCell";
 
 const CellTitle: TCustomCell = () => {
     return (
